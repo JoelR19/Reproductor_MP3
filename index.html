@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Mp3</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <aside>
+      <nav></nav>
+      <div class="song">
+        <div class="first-target">
+          <img src="./imgs/logoSpoti.png" alt="" id="picture" />
+          <h3 id="title"></h3>
+          <audio id="song" src=""></audio>
+        </div>
+
+        <div class="button-target">
+          <button onclick="prevSong()"><img class="icons" src="./imgs/back.png" alt="" /></button>
+          <button onclick="togglePlay()"><img class="icons" src="./imgs/play.png" alt="" /></button>
+          <button onclick="nextSong()"><img class="icons" src="./imgs/next.png" alt="" /></button>
+        </div>
+      </div>
+    </aside>
+
+    <main></main>
+  </body>
+  <script src="./script.js"></script>
+</html>
