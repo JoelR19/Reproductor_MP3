@@ -4,63 +4,71 @@
   box-sizing: border-box;
 }
 
+html,
 body {
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
+  overflow: hidden;
+}
+
+body {
   display: flex;
+  background: #121212;
+  color: white;
+  font-family: Arial, sans-serif;
 }
 
 aside {
-  height: 100%;
-  width: 25%;
+  width: 300px;
+  background: #1a1a1a;
   display: flex;
   flex-direction: column;
-  background-color: #1a1a1a;
-  justify-content: space-around;
   align-items: center;
-  max-width: 300px;
-}
-
-main {
-  width: 75%;
-  height: 100%;
-  background-color: #121212;
+  padding: 20px 0;
+  gap: 20px; /* Espacio entre elementos */
 }
 
 nav {
-  background-color: rgb(95, 36, 36);
-  height: 25%;
   width: 90%;
+  height: 25%;
+  background: rgb(95, 36, 36);
 }
 
 .song {
-  background-color: rgb(28, 34, 66);
-  height: 50%;
   width: 90%;
-}
-.song {
+  background: rgb(28, 34, 66);
+  border-radius: 10px;
+  padding: 20px;
   display: flex;
   flex-direction: column;
-  justify-content: space-around;
   align-items: center;
+  gap: 20px;
 }
 
 #picture {
   width: 90%;
+  border-radius: 8px;
 }
 
 .button-target {
-  width: 90%;
+  width: 100%;
   display: flex;
   justify-content: space-around;
 }
 
 button {
-  cursor: pointer;
-  border: none;
   background: none;
+  border: none;
+  cursor: pointer;
 }
 
 .icons {
-  width: 60%;
+  width: 30px;
+  height: 30px;
+  filter: invert(1); /* Iconos blancos */
+}
+
+main {
+  flex-grow: 1;
+  background: #121212;
 }
