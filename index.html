@@ -8,9 +8,22 @@
   </head>
   <body>
     <aside>
-      <nav></nav>
-      <div class="song">
-        <div class="first-target">
+      <nav class="sidebar-menu">
+        <div class="nav-item">
+          <img src="./imgs/casa.png" alt="Inicio" />
+          <span>Inicio</span>
+        </div>
+        <div class="nav-item">
+          <img src="./imgs/search.png" alt="Buscar" />
+          <span>Buscar</span>
+        </div>
+        <div class="nav-item">
+          <img src="./imgs/libros.png" alt="Tu biblioteca" />
+          <span>Tu biblioteca</span>
+        </div>
+      </nav>
+        <div class="song">
+        <div id="first-target">
           <img src="./imgs/logoSpoti.png" alt="" id="picture" />
           <h3 id="title"></h3>
           <audio id="song" src=""></audio>
@@ -24,7 +37,23 @@
       </div>
     </aside>
 
-    <main></main>
+    <main>
+      <div class="song-list">
+        <div class="song-item" onclick="playFromList(0)">
+          <img src="./imgs/wosVSaczino.avif" alt="ACZINO vs WOS" />
+          <h4>ACZINO vs WOS - Octavos Red Bull</h4>
+        </div>
+        <div class="song-item" onclick="playFromList(1)">
+          <img src="./imgs/interestellar.jpeg" alt="Interstellar" />
+          <h4>Hans Zimmer - Interstellar</h4>
+        </div>
+        <div class="song-item" onclick="playFromList(2)">
+          <img src="./imgs/fein.png" alt="FE!N" />
+          <h4>Travis Scott - FE!N</h4>
+        </div>
+      </div>
+    </main>
+
   </body>
   <script src="./script.js"></script>
 </html>
