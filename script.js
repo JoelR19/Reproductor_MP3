@@ -3,7 +3,7 @@ const songs = [
   './songs/Hans Zimmer - Interstellar - Main Theme.mp3',
   './songs/Travis Scott - FE!N ft. Playboi Carti.mp3'
 ];
-const titles = ['ACZINO vs WOS - Octavos  Red Bull', 'Hans Zimmer - Interstellar', 'Travis Scott - FE!N'];
+const titles = ['ACZINO vs WOS - Red Bull', 'Hans Zimmer - Interstellar', 'Travis Scott - FE!N'];
 const pictures = ['./imgs/wosVSaczino.avif', './imgs/interestellar.jpeg', './imgs/fein.png'];
 
 const music = document.getElementById('song');
@@ -15,7 +15,7 @@ let position = 0;
 function change() {
   music.src = songs[position];
   image.src = pictures[position];
-  Name.texContent = titles[position];
+  Name.textContent = titles[position];
 }
 change();
 
@@ -39,4 +39,12 @@ function prevSong() {
   position = (position - 1 + songs.length) % songs.length;
   change();
   music.play();
+}
+
+
+function playFromList(index) {
+  position = index;
+  change();
+  music.play();
+  btnToggle.src = './imgs/pausa.png';
 }
